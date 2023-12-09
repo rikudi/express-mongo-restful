@@ -1,8 +1,10 @@
+//Router and all related imports & exports has to be named accordingly
+
 const config = require('./utils/config')
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const blogsRouter = require('./controllers/exampleRouter')
+//const exampleRouter = require('./controllers/exampleRouter')
 const middlewares = require('./utils/middlewares')
 const logger = require('./utils/logger')
 const mongoose = require('mongoose')
@@ -24,7 +26,7 @@ app.use(cors())
 app.use(express.json())
 app.use(middlewares.requestLogger)
 
-//app.use('/api/blogs', blogsRouter) //<--router
+//app.use('/api/test', exampleRouter) //<--router
 
 app.use(middlewares.unknownEndpoint)
 app.use(middlewares.errorHandler)

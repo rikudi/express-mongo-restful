@@ -1,5 +1,6 @@
-//This is an example router for a blog application
-//Model and schema has to be edited for own needs.
+//This is an example router for a blog application//
+
+//Model names and schemas has to be edited based on own desires
 
 const blogsRouter = require('express').Router()
 const Blog = require('../models/mongo')

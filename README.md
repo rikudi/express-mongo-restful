@@ -10,12 +10,16 @@ This repository provides a simple template for setting up a RESTful API using Ex
 - MongoDB Atlas integration using Mongoose
 - Organized directory structure with controllers, models, and utilities
 
+
+#### Disclaimer
+This is mainly intended for my personal use and will most likely be modified heavily. Complete setup will require modifications to modules before application can be run. Free-to-use.
+
 ## Getting Started
 
 ### Needed:
 
 - Node.js
-- MongoDB Atlas account
+- MongoDB Atlas account & active cluster
 
 ### Installation
 
@@ -33,7 +37,9 @@ This repository provides a simple template for setting up a RESTful API using Ex
    MONGODB_URI="your_mongodb_atlas_auth_string"
    PORT=PORT_NUMBER
    ```
-4. Run application
+4. Check code comments and rename modules before running
+
+5. Run command
    ```bash
    npm run dev
    ```
